@@ -1,0 +1,6 @@
+$ cat .gitignore
+*.[oa]
+*~
+*.psd
+*.pdf
+raw/
