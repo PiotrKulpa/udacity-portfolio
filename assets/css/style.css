@@ -1,16 +1,17 @@
+/* Main */
 * {
   box-sizing: border-box;
 }
 
-/** Fonts */
+/* Fonts */
 @font-face {
-    font-family: latoregular;
-    src: url('/assets/fonts/latoregular.ttf');
+    font-family: "latoregular";
+    src: url(/assets/fonts/latoregular.ttf);
 }
 
 @font-face {
-    font-family: latolight;
-    src: url('/assets/fonts/latolight.ttf');
+    font-family: "latolight";
+    src: url(/assets/fonts/latolight.ttf);
 }
 
 /** Colors */
@@ -23,25 +24,26 @@
 
 body {
   margin: 0;
-  font-family: latolight, sans-serif;
+  font-family: "latolight", sans-serif;
   background-color: white;
   color: #aaaaaa;
 }
 
 h1 {
-  font-family: latolight, sans-serif;
+  font-family: "latolight", sans-serif;
   letter-spacing: 10px;
   font-size: 2em;
 }
 
-h2, h3 {
-  font-family: latoregular, sans-serif;
+h2,
+h3 {
+  font-family: "latoregular", sans-serif;
   letter-spacing: 10px;
 }
 
 h4 {
   font-size: 1em;
-  font-family: latolight, sans-serif !important;
+  font-family: "latolight", sans-serif !important;
   margin: 0;
 }
 
@@ -54,7 +56,8 @@ h4 {
   overflow: hidden;
 }
 
-header {
+/* Header */
+.home {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -63,13 +66,14 @@ header {
   max-width: 1900px;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/mountain-landscape.jpg');
+  background-image: url(../images/mountain-landscape.jpg);
   background-position: center;
   background-size: cover;
   color: white;
 }
 
-nav {
+/* Navigation */
+.nav {
   width: 100%;
 }
 
@@ -85,7 +89,7 @@ nav {
   cursor: pointer;
 }
 
-nav .fa {
+.nav .fa {
   font-size: 2em;
   padding: 10px 10px 0 10px;
   text-shadow: 1px 1px 1px #393939;
@@ -135,14 +139,14 @@ nav .fa {
 
 .slogan h1 {
   font-size: 3em;
-  font-family: latolight;
+  font-family: "latolight", sans-serif;
   padding: 15px;
   margin: 0;
 }
 
 .slogan h2 {
   font-size: 1.5em;
-  font-family: latolight;
+  font-family: "latolight", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -157,13 +161,13 @@ nav .fa {
   font-size: 2em;
 }
 
-section {
-  padding: 25px 55px 25px 55px;
+/* Main */
+.content {
+  padding: 25px 55px;
 }
 
-p span
-{
-    display: block;
+.no-inline span {
+  display: block;
 }
 
 .aboutme {
@@ -195,8 +199,8 @@ p span
 .whatido-block {
   width: 50%;
   padding: 15px;
-  border-bottom: 1px solid #F5F5F5;
-  border-right: 1px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
 }
 
 .whatido-block:nth-of-type(3), .whatido-block:nth-of-type(4) {
@@ -212,8 +216,6 @@ p span
   margin: auto;
   padding-bottom: 15px;
 }
-
-
 
 .works {
   display: flex;
@@ -242,7 +244,6 @@ p span
 
 .work-tools {
   width: 30%;
-
 }
 
 .work-tools h2 {
@@ -260,10 +261,14 @@ p span
   color: #aaaaaa;
 }
 
+.work-thumb-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
 .work-thumb {
   width: 100%;
 }
-
 
 .darker {
   background-color: #333333;
@@ -290,7 +295,7 @@ p span
   font-size: 1em;
 }
 
-button {
+.message-me {
   background-color: #f5f5f5;
   padding: 15px;
   border: solid 1px #333333;
@@ -298,11 +303,11 @@ button {
   cursor: pointer;
 }
 
-button:focus , button:active{
+.message-me:focus , .message-me:active {
   outline: 0;
 }
 
-button:hover {
+.message-me:hover {
   transition: background-color 0.5s;
   background-color: white;
 }
@@ -314,13 +319,13 @@ button:hover {
 .message-me-txt a {
   text-decoration: none;
   color: #aaaaaa;
-
 }
 
-footer {
+/* Footer */
+.footer {
   background-color: #ececec;
   text-align: center;
-  padding: 25px 55px 25px 55px;
+  padding: 25px 55px;
 }
 
 .footer .fa {
@@ -333,9 +338,7 @@ footer {
   color: #aaaaaa;
 }
 
-
 /* Animations*/
-
 .slide-bottom {
 	-webkit-animation: slide-bottom 0.5s ease-in infinite alternate ;
 	animation: slide-bottom 0.5s ease-in infinite alternate ;
@@ -421,12 +424,11 @@ footer {
  @media screen and (max-width: 750px) {
 
    h1 {
-
      letter-spacing: 5px;
-
    }
 
-   h2, h3 {
+   h2,
+   h3 {
      letter-spacing: 5px;
    }
 
@@ -438,7 +440,7 @@ footer {
      padding: 2px;
    }
 
-   p span {
+   .no-inline span {
      display: inline;
    }
 
@@ -458,17 +460,15 @@ footer {
 
    .whatido-block {
      width: 100%;
-     border-bottom: 1px solid #F5F5F5;
+     border-bottom: 1px solid #f5f5f5;
    }
 
    .whatido-block:nth-of-type(3), .whatido-block:nth-of-type(4) {
-     border-bottom: 1px solid #F5F5F5;
+     border-bottom: 1px solid #f5f5f5;
    }
-
 
    .work-list, .work-list-inner, .work-tools {
      width: 100%;
    }
-
 
  }
