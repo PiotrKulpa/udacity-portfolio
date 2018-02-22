@@ -13,7 +13,7 @@
 
 	<body>
 
-		<main class="container">
+		<div class="container">
 			<div class="header-wrapper">
 				<header class="home">
 
@@ -47,7 +47,7 @@
 				</header>
 			</div>
 
-			<div class="main-content">
+			<main class="main-content">
 
 				<section class="content aboutme">
 					<img src="assets/images/avatar.jpg" alt="avatar">
@@ -131,7 +131,14 @@
 								<p>Github: <a href="https://github.com/PiotrKulpa/omero" target="_blank">Link</a></p>
 								<figure class="work-thumb-wrapper">
 			     			  <picture>
-			              <source src="" >
+			              <source
+											media="(max-width: 400px)"
+											srcset="assets/images/omero400.jpg"
+										/>
+											<source
+												media="(min-width: 401px)"
+												srcset="assets/images/omero.jpg"
+											/>
 			              <img class="work-thumb" src="assets/images/omero.jpg" alt="omero thumbnail">
 			            </picture>
 			          </figure>
@@ -150,7 +157,19 @@
 
 								<p>Link: in progress</p>
 								<p>Github: <a href="https://github.com/PiotrKulpa/prodentica" target="_blank">Link</a></p>
-								<img class="work-thumb" src="assets/images/prodentica.jpg" alt="prodentica thumbnail">
+								<figure class="work-thumb-wrapper">
+			     			  <picture>
+			              <source
+											media="(max-width: 400px)"
+											srcset="assets/images/prodentica400.jpg"
+										/>
+											<source
+												media="(min-width: 401px)"
+												srcset="assets/images/prodentica.jpg"
+											/>
+			              <img class="work-thumb" src="assets/images/prodentica.jpg" alt="prodentica thumbnail">
+			            </picture>
+			          </figure>
 							</div>
 
 							<div class="work-tools-inner adn">
@@ -162,7 +181,19 @@
 								</ul>
 
 								<p>Link: <a href="http://anna-domicela-niemiec.pl/" target="_blank">See project</a></p>
-								<img class="work-thumb" src="assets/images/adn.jpg" alt="adn thumbnail">
+								<figure class="work-thumb-wrapper">
+			     			  <picture>
+			              <source
+											media="(max-width: 400px)"
+											srcset="assets/images/adn400.jpg"
+										/>
+											<source
+												media="(min-width: 401px)"
+												srcset="assets/images/adn.jpg"
+											/>
+			              <img class="work-thumb" src="assets/images/adn.jpg" alt="adn thumbnail">
+			            </picture>
+			          </figure>
 							</div>
 
 							<div class="work-tools-inner google">
@@ -175,7 +206,19 @@
 								</ul>
 
 								<p>Link: <a href="https://codepen.io/PiotrKulpa/pen/bYjyQR">Codepen</a></p>
-								<img class="work-thumb" src="assets/images/game.jpg" alt="codepen thumbnail">
+								<figure class="work-thumb-wrapper">
+			     			  <picture>
+			              <source
+											media="(max-width: 400px)"
+											srcset="assets/images/game400.jpg"
+										/>
+											<source
+												media="(min-width: 401px)"
+												srcset="assets/images/game.jpg"
+											/>
+			              <img class="work-thumb" src="assets/images/game.jpg" alt="codepen thumbnail">
+			            </picture>
+			          </figure>
 							</div>
 					</div>
 				</section>
@@ -190,7 +233,7 @@
 					<button class="message-me">Message Me <i class="fa fa-commenting-o" aria-hidden="true"></i></button>
 					<h2 class="message-me-txt"><a href="mailto:p.kulpa@onet.eu" target="_top">p.kulpa@onet.eu</a></h2>
 				</section>
-			</div>
+			</main>
 
 			<footer class="footer">
 				<h1>STALK ME</h1>
@@ -198,9 +241,8 @@
 				<a href="https://github.com/PiotrKulpa?tab=repositories"><i class="fa fa-github" aria-hidden="true"></i></a>
 				<a href="https://codepen.io/PiotrKulpa/"><i class="fa fa-codepen" aria-hidden="true"></i></a>
 				<p>2018 © Piotr Kulpa. Released under Public License. </p>
-				<p>Based on Simon Zlejsi mockup.</p>
 			</footer>
-		</main>
+		</div>
 
 	<script src="assets/js/main.js"></script>
 	</body>
